@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wallpaper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/settings_desc"
+    android:thumbnail="@drawable/icon"
+    android:settingsActivity="cc.co.techzealous.snowfall.SnowFallPreferenceActivity">
+</wallpaper>

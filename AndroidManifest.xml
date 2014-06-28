@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cc.co.techzealous.snowfall"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+    <user-feature
+        android:name="android.software.live_wallpaper"
+        android:required="true" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <service 
+            android:name=".SnowFallService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/snowfall_lw" />
+        </service>
+        <activity
+            android:name=".SnowFallPreferenceActivity"
+            android:exported="true" />
+        <activity 
+            android:name=".SnowFallAmountActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity 
+            android:name=".SnowFallSpeedActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity 
+            android:name=".SnowFallSizeActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity 
+            android:name=".SnowFallFpsActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".SnowFallBackImageActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".SnowFallEula" />
+    </application>
+
+</manifest>

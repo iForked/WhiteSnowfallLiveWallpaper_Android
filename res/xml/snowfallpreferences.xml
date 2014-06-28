@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="@string/pref_key_amount"
+        android:summary="@string/amount_desc"
+        android:title="@string/amount_of_snow" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="cc.co.techzealous.snowfall.SnowFallAmountActivity"
+            android:targetPackage="cc.co.techzealous.snowfall" />
+    </Preference>
+    <Preference
+        android:key="@string/pref_key_speed"
+        android:summary="@string/speed_desc"
+        android:title="@string/speed_of_snow" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="cc.co.techzealous.snowfall.SnowFallSpeedActivity"
+            android:targetPackage="cc.co.techzealous.snowfall" />
+    </Preference>
+    <Preference
+        android:key="@string/pref_key_size"
+        android:summary="@string/size_desc"
+        android:title="@string/size_of_snow" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="cc.co.techzealous.snowfall.SnowFallSizeActivity"
+            android:targetPackage="cc.co.techzealous.snowfall" />
+    </Preference>
+    <Preference
+        android:key="@string/pref_key_fps"
+        android:summary="@string/fps_desc"
+        android:title="@string/fps" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="cc.co.techzealous.snowfall.SnowFallFpsActivity"
+            android:targetPackage="cc.co.techzealous.snowfall" />
+    </Preference>
+    <Preference
+        android:key="@string/pref_key_image"
+        android:summary="@string/background_image_desc"
+        android:title="@string/background_image" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="cc.co.techzealous.snowfall.SnowFallBackImageActivity"
+            android:targetPackage="cc.co.techzealous.snowfall" />
+    </Preference>
+
+    <PreferenceCategory android:title="@string/more_apps" >
+        <Preference
+            android:key="@string/pref_key_more"
+            android:title="@string/more_apps" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://search?q=pub:Emil Todorov" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
